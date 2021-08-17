@@ -1,0 +1,14 @@
+extends base
+block content 
+  h2 C'est le moment du test 
+  form(action="/result", method="POST", class="form")
+    div 
+      h3= opperand1
+      h3 +
+      h3= opperand2 
+      h3 = ???
+      h3 Devinez et gagnez un cours gratuit en NodeJs !!!
+      input(type="number" name="answer", class="form-control") 
+      input(type="hidden" name="opperand1", class="form-control" value=`${opperand1}`)  
+      input(type="hidden" name="opperand2", class="form-control" value=`${opperand2}`)
+    button(class="btn btn-info") Vérifier le résultat
